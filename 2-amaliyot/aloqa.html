@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AvtoE'lon bilan bog'lanish — e'lon berish formasi.">
+    <title>AvtoE'lon — Aloqa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="yuqori">
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1 class="brand">AvtoE'lon</h1>
+            <nav aria-label="Asosiy navigatsiya">
+                <ul class="nav-list">
+                    <li><a href="index.html">Bosh sahifa</a></li>
+                    <li><a href="batafsil.html">Batafsil</a></li>
+                    <li><a href="aloqa.html">Aloqa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>E'lon berish formasi</h2>
+            <p class="izoh">
+                Avtomobilingizni sotmoqchimisiz? Quyidagi formani to'ldiring,
+                biz siz bilan bog'lanamiz.
+            </p>
+        </section>
+        <section class="form-section">
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Shaxsiy ma'lumotlar</legend>
+                    <div class="form-group">
+                        <label for="ism">Ismingiz:</label>
+                        <input type="text" id="ism" name="ism" required placeholder="Ali">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="ali@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Telefon:</label>
+                        <input type="tel" id="tel" name="tel" required
+                               pattern="+998 -- --- -- --"
+                               placeholder="+998 -- --- -- --">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Avtomobil ma'lumotlari</legend>
+                    <div class="form-group">
+                        <label for="model">Model:</label>
+                        <input type="number" id="model" name="model" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="yil">Ishlab chiqarilgan yili:</label>
+                        <input type="number" id="yil" name="yil" min="1990" max="2026" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="narx">Narxi (so'm):</label>
+                        <input type="number" id="narx" name="narx" min="0" step="1000000">
+                    </div>
+                    <div class="form-group">
+                        <label for="sana">E'lon sanasi:</label>
+                        <input type="date" id="sana" name="sana">
+                    </div>
+                    <fieldset class="radio-group">
+                        <legend>Uzatmalar qutisi:</legend>
+                        <label>
+                            <input type="radio" name="quti" value="mexanika" checked>
+                            Mexanika
+                        </label>
+                        <label>
+                            <input type="radio" name="quti" value="avtomat">
+                            Avtomat
+                        </label>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="izoh">Qo'shimcha izoh:</label>
+                        <textarea id="izoh" name="izoh" rows="4"
+                                  placeholder="Avtomobil haqida qo'shimcha ma'lumot..."></textarea>
+                    </div>
+                </fieldset>
+                <button type="submit" class="submit-btn">E'lonni yuborish</button>
+            </form>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3>AvtoE'lon</h3>
+                <p>Urganch shahridagi ishonchli avtomobil e'lonlari.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Aloqa</h3>
+                <p><a href="mailto:info@avtoelon.uz">@avtoelon.uz</a></p>
+                <p><a href="tel:+998901234567">+998 90 123 45 67</a></p>
+            </div>
+        </div>
+    </footer>
+    <a href="#yuqori" class="to-top" aria-label="Yuqoriga">↑</a>
+</body>
+</html>
